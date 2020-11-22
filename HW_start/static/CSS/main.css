@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    border-top: 0;
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+header{
+    background-color: black;
+    height: 150px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border-bottom-left-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    position: relative;
+}
+
+h1 {
+    font-family: "Dancing Script";
+    color: cornsilk;
+    margin: 0;
+    padding: 40px;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    padding: 3px;
+}
+input {
+    border-width: 1px;
+    
+    width: 250px;
+    height: auto;
+    outline: none;
+    background-color: whitesmoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: dimgray;
+    transition: color 0.3s ease;
+}
+
+select:focus::placeholder{
+    color: transparent;
+}
+
+select::placeholder{
+    color: dimgray;
+    transition: color 0.3s ease;
+}
+
+select {
+    
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: whitesmoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#manufacturer {
+    padding: 3px;
+}
+
+#type {
+    padding: 3px;
+}
+
+#image {
+    opacity: 0.25;
+    width: 300px;
+    height: auto;
+}
+
+#new-pedal-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#collection-title {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#pedal-collection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#priority {
+    white-space: normal;
+    display: block;
+    left: -60px;
+    top: -19px;
+    position: relative;
+    
+}
+
+#name {
+    white-space: normal;
+    display: block;
+    left: 95px;
+    top: -19px;
+    position: relative;
+}
+
+#manufacturer {
+    white-space: normal;
+    display: block;
+    left: 95px;
+    top: -19px;
+    position: relative;
+}
+
+#type {
+    white-space: normal;
+    display: block;
+    left: 95px;
+    top: -19px;
+    position: relative;
+}
+
+.individual-pedal {
+    margin-left: 20px;    
+}
+
+.individual-pedal {
+    animation: fade 1.5s ease forwards;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.button {
+    padding: 5px;
+}
+
+#radio-inputs {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+    <link rel="icon" href="static/images/gtrpdl2.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="JS/app.js"></script>
+    <title>Guitar Pedals</title>
+</head>
+<body>
+    <header>
+        <h1>Guitar Pedal Wishlist!</h1>
+    </header>
+
+    
+
+    <form id="new-pedal-form">
+        <Div id="input-section">
+            <div>
+                <label for="name">Pedal Name:</label>
+                <input type="text" id='name' required placeholder="Type here">
+            </div>
+            <div>
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id='manufacturer' required placeholder="Type here">
+            </div>
+            <div>
+                
+                <label for="type">Pedal Type:</label>
+                <select name="pedal-type" id="type" required>
+                    <option value=""disabled selected hidden>Select</option>
+                    <option value=""disabled ></option>
+                    <option value="saturation">Saturation</option>
+                    <option value="reverb">Reverb</option>
+                    <option value="delay">Delay</option>
+                    <option value="modulation">Modulation</option>
+                    <option value="compressor">Compressor</option>
+                    <option value="looper">Looper</option>
+                    <option value="volume">Volume</option>
+                    <option value="tuner">Tuner</option>
+                </select>
+            </div>
+            <section id="radio-inputs">
+                <h3>Wishlist Priority</h3>
+                <div>
+                    <label for="high">High</label>
+                    <input type="radio" name="priority" id="priority" value="High">
+                </div>
+                <div>
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="priority" id="priority" value="Medium">
+                </div>
+                <div>
+                    <label for="low">Low</label>
+                    <input type="radio" name="priority" id="priority" value="Low">
+                </div>
+                <div>
+                    <label for="owned">Owned</label>
+                    <input type="radio" name="priority" id="priority" value="Owned">
+                </div>
+            </div>
+                <div class="button">
+                    <input type="submit" value="Save">
+                </div>
+                <div class="button">
+                    <input id="delete-button" type="button" value="Delete All">
+                </div>
+            </section>
+    </form>
+    <h2 id="collection-title">Pedal Collection</h2>
+    <div>
+        <ul id="pedal-collection"></ul>
+    </div>
+    
+</body>
+</html>
